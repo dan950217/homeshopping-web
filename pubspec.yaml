@@ -1,0 +1,29 @@
+name: homeshopping
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.8
+  dropdown_search: ^6.0.1 
+  image_picker: ^1.0.7  # [신규 추가] 사진 업로드용
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # [중요] 여기가 수정된 부분입니다.
+  # assets 폴더 안의 images 폴더를 앱에서 사용할 수 있게 등록합니다.
+  assets:
+    - assets/images/logo.jpg
